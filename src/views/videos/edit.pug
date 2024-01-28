@@ -1,0 +1,14 @@
+extends ../base.pug
+
+block content 
+    div.update-video
+        h1 Edit
+        h1.update-video__title  #{video.title}
+    form(method="POST").submit__form
+        label(for="title") Title
+        input(name="title", placeholder="Video Title",value=video.title, required, maxlength=80)
+        label(for="description") Description
+        input(name="description",placeholder="Description",value=video.description, required, type="text", minlength=20)
+        label(for="hashtags") Hashtags
+        input(name="hashtags",placeholder="Hashtags, separated by comma.",value=video.hashtags.join(), required, type="text")
+        input(value="Save",type="submit")

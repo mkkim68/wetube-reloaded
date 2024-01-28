@@ -1,0 +1,22 @@
+.profile__info {
+  display: flex;
+  justify-content: start;
+  img {
+    margin-right: 20px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    h1 {
+      font-size: 30px;
+    }
+    span {
+      color: rgba(255, 255, 255, 0.75);
+      font-weight: 200;
+    }
+  }
+}
+.profile__videos {
+  margin-top: 30px;
+}

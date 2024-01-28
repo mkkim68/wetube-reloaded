@@ -1,0 +1,48 @@
+.empty__message {
+  margin: 30px 0px;
+  font-size: 20px;
+}
+.video-grid {
+  display: grid;
+  gap: 30px;
+  margin-top: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  :hover {
+    .video-mixin__thumb {
+      box-shadow: 1px 1px 30px 3px rgba(255, 255, 255, 0.3);
+      border-radius: 0%;
+      transition-duration: 1s;
+    }
+  }
+}
+.submit__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 30px auto;
+  gap: 10px;
+  label {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  input {
+    all: unset;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: black;
+    font-size: 18px;
+    color: white;
+  }
+  input[type="submit"] {
+    background-color: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    text-align: center;
+  }
+}
+.link {
+  color: cornflowerblue;
+}
+.avatar {
+  border-radius: 50%;
+}

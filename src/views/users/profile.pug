@@ -1,0 +1,18 @@
+extends ../base
+include ../mixins/video
+
+block content   
+    div.profile__info
+        img(src="/"+user.avatarUrl, width="100", height="100").avatar
+        div
+            h1 #{user.name}
+            span=user.email
+            if (String(loggedInUser._id) === String(user._id))
+                a.link(href="edit") Edit Profile &rarr;
+    div.profile__videos 
+        span 업로드한 비디오
+        div.video-grid
+            each info in videos
+                +video(info)
+            else
+                span.empty__message No videos found

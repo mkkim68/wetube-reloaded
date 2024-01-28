@@ -1,0 +1,14 @@
+.update-video {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 30px;
+  padding: 30px;
+  h1 {
+    margin: 7px;
+    font-weight: 200;
+  }
+  .update-video__title {
+    font-weight: 800;
+  }
+}

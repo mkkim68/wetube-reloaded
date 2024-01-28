@@ -1,0 +1,29 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  .search__form {
+    display: flex;
+    justify-content: center;
+    max-width: 420px;
+    margin: 0 auto;
+    input {
+      all: unset;
+      margin-bottom: 10px;
+      padding: 5px 20px;
+      border-radius: 15px 0 0 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background-color: black;
+      font-size: 18px;
+      color: white;
+    }
+    input[type="submit"] {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 0 15px 15px 0;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+}

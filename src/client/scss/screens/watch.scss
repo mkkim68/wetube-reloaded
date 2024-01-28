@@ -1,0 +1,137 @@
+.video__info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  .video__title {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .video__owner {
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    a {
+      margin-right: 5px;
+    }
+  }
+  .video__detail {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+      flex-direction: row;
+      margin: 10px 10px 0px 10px;
+      p {
+        margin-bottom: 10px;
+      }
+      small {
+        margin-right: 5px;
+      }
+      .video__date {
+        font-weight: 600;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        .video__hashtags {
+          color: rgba(255, 255, 255, 0.5);
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+.video__onlyowner {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  a {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+    padding: 7px;
+    border-radius: 10px;
+  }
+  a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  a:active {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .video__delete {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+.video__add-comments {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  margin-top: 30px;
+  div {
+    margin-right: 10px;
+  }
+  input {
+    all: unset;
+    width: 89%;
+    margin-right: 10px;
+    border-bottom: 1px solid white;
+  }
+  input:focus {
+    border-bottom: 2px solid white;
+  }
+  button {
+    all: unset;
+    height: 30px;
+    background-color: rgb(100, 149, 237);
+    color: white;
+    padding: 3px 7px;
+    border-radius: 15px;
+  }
+  button:hover {
+    background-color: rgb(139, 173, 237);
+  }
+  button:active {
+    background-color: rgba(100, 149, 237, 0.5);
+  }
+}
+.video__comments {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  .video__comment {
+    display: flex;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+    img {
+      margin-right: 10px;
+    }
+    .comment__owner {
+      margin-bottom: 10px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  button {
+    all: unset;
+    i {
+      color: rgb(186, 47, 47);
+    }
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    right: 10px;
+    :hover {
+      color: $red;
+    }
+    :active {
+      color: rgb(103, 22, 22);
+    }
+  }
+}

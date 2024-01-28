@@ -1,0 +1,17 @@
+.edit__avatar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  div {
+    flex-direction: column;
+    h2 {
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    input {
+      height: 30px;
+      width: 300px;
+    }
+  }
+}
